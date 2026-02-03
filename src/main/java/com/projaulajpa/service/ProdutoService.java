@@ -13,12 +13,10 @@ public class ProdutoService {
 
 	private final ProdutoRepository produtoRepository;
 	
-	@Autowired //conexão de camadas
+	@Autowired 
 	public ProdutoService (ProdutoRepository produtoRepository) {
 		this.produtoRepository = produtoRepository;
 	}
-	
-	//funcionalidade salvar
 	
 	public Produto salvarProduto(Produto produto) {
 		return produtoRepository.save(produto);

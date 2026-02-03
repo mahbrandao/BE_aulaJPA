@@ -1,5 +1,7 @@
 package com.projaulajpa.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +28,16 @@ public class ClienteService {
 
 	public ClienteRepository getClienteRepository() {
 		return clienteRepository;
+	}
+
+	public List<Cliente> getAllClientes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Cliente getClientePorId(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
